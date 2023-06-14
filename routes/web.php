@@ -35,3 +35,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/meetings', [MeetingsController::class, 'index'])->name('meetings');
+Route::get('/meetings/create', [MeetingController::class, 'create'])->name('meetings.create');
+
